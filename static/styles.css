@@ -1,0 +1,125 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #4b6777;
+    color: #ce9e62;
+    position: relative;
+    left: 2%;
+    right: 2%;
+    width: 96%;
+}
+
+.container {
+    max-width: 1280px;
+    margin-top : 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background: #2c2c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ce9e62;
+    max-height: 8px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: #2c2c2c 0 0 4px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 2rem;
+}
+
+header button {
+    margin: 0;
+    padding: 2px;
+}
+
+button {
+    background-color: #2c2c2c;
+    border: none;
+    padding: 10px 20px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ce9e62;
+}
+
+button:hover {
+    background: #414141;
+}
+
+.form-container {
+    background: #c1432e;
+    border: 2px solid #2c2c2c;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: #2c2c2c 0 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 300px;
+    margin: 16rem auto;
+    color: #ce9e62;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #2c2c2c;
+    background-color: #4b6777;
+    color: #ce9e62;
+    border-radius: 12px;
+    outline: none;
+}
+
+.form-container button {
+    color: #ce9e62;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+video {
+    width: 100%;
+    height: auto;
+    max-height: 720px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: #2c2c2c 0 0 4px;
+}
+
+.fullscreen-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+i {
+    margin-right: 2px;
+}
+

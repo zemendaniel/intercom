@@ -1,0 +1,7 @@
+quart
+python-dotenv
+werkzeug
+sounddevice
+aiortc
+numpy
+av

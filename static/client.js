@@ -127,6 +127,7 @@ function stop() {
     if (localAudioTrack.enabled) {
         toggleMic();
     }
+    localAudioTrack.stop();
 }
 
 function toggleMic() {

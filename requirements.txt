@@ -5,3 +5,4 @@ sounddevice
 aiortc
 numpy
 av
+hypercorn

@@ -66,9 +66,9 @@ function start() {
     let config = {
         sdpSemantics: 'unified-plan',
         iceServers: [{
-            urls: ['turn:10.21.40.25:3478'],
-            username: 'turnuser',
-            credential: 'turnpassword'
+            urls: ['turn:{{ turn_url }}'],
+            username: '{{ turn_user }}',
+            credential: '{{ turn_password }}'
         }]
     };
 

@@ -63,6 +63,7 @@ function negotiate() {
 
 function start() {
     document.getElementById('start').style.display = 'none';
+    document.getElementById("running").remove();
     let config = {
         sdpSemantics: 'unified-plan',
         iceServers: [{

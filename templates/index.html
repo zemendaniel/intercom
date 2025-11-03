@@ -13,7 +13,6 @@
     <div class="button-group">
         <button id="start" onclick="start()"><i class="fa-solid fa-play"></i> Start</button>
         <button id="stop" onclick="stop()"><i class="fa-solid fa-circle-stop"></i> Stop</button>
-        <p>{{ is_running }}</p>
     </div>
     <form action="/logout" method="post">
         <button type="submit"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
@@ -21,6 +20,10 @@
 </header>
 
 <div class="container">
+    {% if is_running %}
+        <p id="running">The devices are running in the background. You might want to stop them if you are not watching the stream.</p>
+    {% endif %}
+
     <div id="media" style="display: none">
         <audio id="audio" autoplay muted></audio>
         <video id="video" autoplay playsinline muted></video>

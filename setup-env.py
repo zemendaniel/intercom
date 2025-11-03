@@ -14,6 +14,7 @@ with open(".env", "w", encoding="utf-8") as f:
     f.write(f"""
 SECRET_KEY={secret_key}
 PASSWORD={generate_password_hash(password)}
+CAM_URL={cam_url}
 MIC_NAME={mic_name}
 PLAYBACK_NAME={playback_name}
 TURN_URL={turn_url}

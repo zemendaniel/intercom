@@ -103,6 +103,7 @@ function start() {
 
 function stop() {
     document.getElementById('media').style.display = 'none';
+    document.getElementById("running")?.remove();
 
     // close peer connection
     if (pc !== null) {

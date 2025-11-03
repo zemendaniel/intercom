@@ -123,3 +123,8 @@ header i {
     margin-right: 2px;
 }
 
+#running {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

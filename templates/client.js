@@ -125,7 +125,7 @@ function stop() {
     if (!video.muted) {
         toggleAudio();
     }
-    if (localAudioTrack.enabled) {
+    if (localAudioTrack?.enabled) {
         toggleMic();
     }
     localAudioTrack.stop();

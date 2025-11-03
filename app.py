@@ -16,7 +16,7 @@ media = MediaCapture(os.getenv("CAM_URL"), os.getenv("MIC_NAME"), os.getenv("PLA
 @app.route("/")
 @is_logged_in
 async def index():
-    return await render_template("index.html")
+    return await render_template("index.html", is_running=media.is_running)
 
 
 @app.route("/js/client.js")

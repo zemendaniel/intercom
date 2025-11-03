@@ -109,18 +109,18 @@ function stop() {
         setTimeout(() => {
             pc.close();
         }, 500);
-
-
-        fetch("/stop", {
-              method: "POST"
-            }).then(response => {
-              if (response.ok) {
-                console.log("Server shutdown requested");
-              } else {
-                console.error("Shutdown request failed");
-              }
-            });
     }
+
+    fetch("/stop", {
+          method: "POST"
+        }).then(response => {
+          if (response.ok) {
+            console.log("Server shutdown requested");
+          } else {
+            console.error("Shutdown request failed");
+          }
+        });
+
     document.getElementById('start').style.display = 'inline-block';
     if (!video.muted) {
         toggleAudio();
